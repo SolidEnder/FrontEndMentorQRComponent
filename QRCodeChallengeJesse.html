@@ -7,10 +7,13 @@
 		<div id="qrContainer">
 			<img src="C:\Users\bryan\AppData\Local\Temp\Temp1_qr-code-component-main.zip\qr-code-component-main\images\image-qr-code.png"
 			id="qrImg" >
-			<h3 id="msgHead">Get the best deals on <br> clothing!</h3>
-			<p id="qrMsg">Scan the qr to get the <br> best deals from our <br> online store</p>
+			<h3 id="msgHead">Improve your front-end skills <br> by building projects</h3>
+			<p id="qrMsg">Scan the QR code to visit Frontend <br> Mentor and take your coding skills <br> to the next level </p>
 		</div>
 		<style>
+			body {
+				background-color: hsl(220, 15%, 55%);
+			}
 			#qrImg {
 				position: absolute;
 				left: clamp(25px, 15%, 45px);
@@ -40,12 +43,13 @@
 				margin-top: 1.5em;
 				top: clamp(170px, 70%, 300px);
 				left: 15px;
+				color: hsl(212, 45%, 89%);
 			}
 			div#qrContainer {
 				position: absolute;
 				width: clamp(200px, 25%, 250px);
 				height: clamp(255px, 90%, 350px);
-				background-color: hsl(212, 45%, 89%);
+				background-color: white;
 				top: calc(50% - 255px / 2);
 				left: 50%;
 				transform: translateX(-50%);
