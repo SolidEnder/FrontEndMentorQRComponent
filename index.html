@@ -1,88 +1,64 @@
+<!DOCTYPE html>
 <html>
+<link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<body>
-		<link rel="icon" type="image/x-icon" href="favicon-32x32.png">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<div id="qrContainer">
-			<img src="image-qr-code.png"
+			<img src="C:\Users\bryan\AppData\Local\Temp\Temp1_qr-code-component-main.zip\qr-code-component-main\images\image-qr-code.png"
 			id="qrImg" >
-			<h3 id="msgHead">Improve your front-end skills <br> by building projects</h3>
-			<p id="qrMsg">Scan the QR code to visit Frontend <br> Mentor and take your coding skills <br> to the next level </p>
+			<h4 id="msgHead">Improve your front-end skills by building projects</h4>
+			<p id="qrMsg">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
 		</div>
 		<style>
 			body {
 				background-color: lightblue;
 			}
 			#qrImg {
-				position: absolute;
-				left: clamp(25px, 15%, 45px);
+				position: relative;
+				left: 15px;
 				top: 10px;
-				width: clamp(145px, 70%, 170px);
-				height: clamp(145px, 50%, 170px);
+				width: 220px;
+				height: 220px;
+				border-radius: 10%;
 			}
 			#msgHead {
-				position: absolute;
-				max-width: 50%;
-				white-space: nowrap;
-				top: 160px;
-				left: 15px;
+				position: relative;
 				font-family: "Outfit", sans-serif;
-				font-size: clamp(1rem, 2.1vw, 1.2rem);
+				width: 210px;
 				margin: 7% auto;
-				justify-content: center; 
-				width: 120px;
+				text-align: center; 
 			}
 			p#qrMsg {
 				position: relative;
 				font-family: "Outfit", sans-serif;
-				font-size: clamp(0.85rem, 1.8vw, 1rem);
-				white-space: nowrap;
+				font-size: 14px;
 				line-height: 15px;
-				max-width: 80%;
 				margin-top: 1.5em;
-				top: clamp(170px, 70%, 300px);
-				left: 15px;
+				left: 45px;
+				width: 160px;
+				text-align: center;
 				color: hsl(220, 15%, 55%);
-				justify-content: center;
-				width: 120px;
 			}
 			div#qrContainer {
 				position: absolute;
-				width: clamp(200px, 25%, 250px);
-				height: clamp(255px, 90%, 350px);
+				width: 250px;
+				height: 360px;
 				background-color: white;
-				top: calc(50% - 255px / 2);
+				top: 20px;
 				left: 50%;
 				transform: translateX(-50%);
 				border-radius: 10%;
 			}
 			
-		 @media (max-width: 600px) {
-		 		#qrContainer {
-		 			position: absolute;
-		 			left: 20%;
-		 			width: 150px;
-		 			height: 255px;
-		 			margin-left: -20px;
-		 		}
-		 }
-			
-			@media (min-width: 600px) {
-				#msgHead {
-					position: absolute;
-					top: 190px;
-				}
-			}
-			
-			@media only screen and (min-width: 600px) {
+			@media (min-width: 600px) {		
 				div#qrContainer {
 					position: absolute;
-					top: calc(50% - 400px / 2);
-					
+					top: 70px;
 				}
 			}
 		</style>
 	</body>
-</html>
+</html
