@@ -1,63 +1,29 @@
-<!DOCTYPE html>
-<html>
-<link rel="icon" type="image/x-icon" href="favicon-32x32.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<body>
-		<div id="qrContainer">
-			<img src="image-qr-code.png" id="qrImg" >
-			<h4 id="msgHead">Improve your front-end skills by building projects</h4>
-			<p id="qrMsg">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-		</div>
-		<style>
-			body {
-				background-color: hsl(220, 15%, 55%);
-			}
-			#qrImg {
-				position: relative;
-				left: 15px;
-				top: 10px;
-				width: 220px;
-				height: 220px;
-				border-radius: 10%;
-			}
-			#msgHead {
-				position: relative;
-				font-family: "Outfit", sans-serif;
-				width: 210px;
-				margin: 7% auto;
-				text-align: center; 
-			}
-			p#qrMsg {
-				position: relative;
-				font-family: "Outfit", sans-serif;
-				font-size: 14px;
-				line-height: 15px;
-				margin-top: 1.5em;
-				left: 45px;
-				width: 160px;
-				text-align: center;
-				color: hsl(220, 15%, 55%);
-			}
-			div#qrContainer {
-				position: absolute;
-				width: 250px;
-				height: 360px;
-				background-color: white;
-				top: 20px;
-				left: 50%;
-				transform: translateX(-50%);
-				border-radius: 10%;
-			}
-			
-			@media (min-width: 600px) {		
-				div#qrContainer {
-					position: absolute;
-					top: 70px;
-				}
-			}
-		</style>
-	</body>
-</html
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset= "UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 		
+    <link rel="icon" href="favicon-32x32.png"/>
+    <link rel="stylesheet" href="QrCodeComponent.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet"/>
+		
+    <title>Front-End Mentor | QR Code Component</title>
+		
+ </head>
+<body>
+    <main class="qrContainer">
+	<img src="image-qr-code.png" class="qrImg" alt="QR">
+	<p class="msgHead">Improve your front-end skills by building projects</p>
+	<p class="qrMsg">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </main>
+</body>
+<footer>
+    <p class= "credit">
+    Challenge by <a href="http://www.frontendmentor.io" target="blank">
+    Frontend Mentor</a>. Coded by <a href="https://github.com/SolidEnder"> Jesse Lucian</a>.
+    </p>
+</footer>
+</html>
